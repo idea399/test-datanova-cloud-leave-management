@@ -110,7 +110,7 @@ const LeaveList = ({
   ];
 
   return (
-    <Box className="mb-10 flex flex-col">
+    <Box className={`mb-10 flex flex-col ${leaves.length === 0 ? "h-60" : ""}`}>
       {client && (
         <Typography variant="h6" component="h6" className="!mb-1">
           <span className="text-base">Client</span>: {client.name}
